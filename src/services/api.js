@@ -1,4 +1,6 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://resume-skills-extractor-backend-production.up.railway.app';
+const API_URL = import.meta.env.VITE_API_URL || 'resume-skills-extractor.up.railway.app';
+
+console.log(API_URL);
 
 export const checkBackendStatus = async () => {
     try {
