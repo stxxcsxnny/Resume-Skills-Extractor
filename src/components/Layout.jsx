@@ -8,7 +8,7 @@ export default function Layout() {
       </main>
       <footer className="bg-white shadow-sm mt-auto">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-500">© 2025 Hackathon. All rights reserved</p>
+          <p className="text-center text-gray-500">© 2025 Hackathon with sunny. All rights reserved</p>
         </div>
       </footer>
     </div>
