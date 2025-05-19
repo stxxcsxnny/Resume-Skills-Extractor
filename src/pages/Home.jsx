@@ -1,5 +1,5 @@
 import { useState, useEffect, createRef } from 'react';
-import { checkBackendStatus } from '../services/api';
+import { API_URL, checkBackendStatus } from '../services/api';
 import{motion} from 'framer-motion';
 import Header from '../components/header';
 
@@ -55,11 +55,11 @@ const handleExtractSkills = () => {
 
   const formData = new FormData();
   formData.append('file', selectedFile);
+fetch(`${API_URL}/api/upload`, {
+  method: 'POST',
+  body: formData,
+})
 
-fetch('https://resume-skills-extractor.up.railway.app/api/upload', {
-    method: 'POST',
-    body: formData,
-  })
     .then(async (res) => {
       if (!res.ok) throw new Error('Failed to extract skills');
       const data = await res.json();
