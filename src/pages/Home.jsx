@@ -56,7 +56,7 @@ const handleExtractSkills = () => {
   const formData = new FormData();
   formData.append('file', selectedFile);
 
-  fetch('http://127.0.0.1:8000/api/upload', {
+  fetch('resume-skills-extractor.up.railway.app/api/upload', {
     method: 'POST',
     body: formData,
   })
