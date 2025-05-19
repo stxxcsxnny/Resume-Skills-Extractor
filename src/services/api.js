@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'resume-skills-extractor.up.railway.app';
+const API_URL = import.meta.env.VITE_API_URL || 'https://resume-skills-extractor.up.railway.app/api/upload';
 
 console.log(API_URL);
 
